@@ -6,5 +6,5 @@ class BandasModel(settings.DBBaseModel):
 
     id: int = Column(Integer(), primary_key=True, autoincrement=True)
     nome: str = Column(String(256))
-    qtd_integrantes: int = (Integer())
     tipo_musical: str = Column(String(256))
+    qtd_integrantes: int = Column(Integer())
